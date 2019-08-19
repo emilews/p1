@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AgregarController">
+   <children>
+      <Label layoutX="118.0" layoutY="62.0" text="Continente:" />
+      <Button fx:id="addCountry" layoutX="393.0" layoutY="238.0" mnemonicParsing="false" onAction="#addCountry" text="Agregar" />
+      <Button fx:id="backButton" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToMenu" text="Atrás" />
+      <TextField fx:id="contName" layoutX="195.0" layoutY="58.0" promptText="Continente al que pertenece" />
+      <TextField fx:id="countName" layoutX="195.0" layoutY="95.0" promptText="Nombre del país" />
+      <TextField fx:id="countSize" layoutX="195.0" layoutY="130.0" promptText="Tamaño del país" />
+      <TextField fx:id="countLang" layoutX="195.0" layoutY="165.0" promptText="Idioma oficial del país" />
+      <Label layoutX="131.0" layoutY="99.0" text="Nombre:" />
+      <Label layoutX="124.0" layoutY="134.0" text="Extensión:" />
+      <Label layoutX="139.0" layoutY="169.0" text="Idioma:" />
+   </children>
+</Pane>

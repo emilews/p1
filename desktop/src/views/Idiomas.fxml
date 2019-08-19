@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LangController">
+   <children>
+      <ChoiceBox fx:id="langChoice" layoutX="197.0" layoutY="58.0" prefWidth="150.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="América" />
+              </FXCollections>
+          </items>
+      </ChoiceBox>
+      <Label layoutX="116.0" layoutY="62.0" text="Idiomas:" />
+      <ListView id="byLangList" fx:id="byLangList" layoutX="101.0" layoutY="131.0" prefHeight="200.0" prefWidth="398.0" />
+      <Button fx:id="buscarByLang" layoutX="369.0" layoutY="58.0" mnemonicParsing="false" onAction="#populateListByLang" text="Buscar" />
+      <Button fx:id="backButton" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToMenu" text="Atrás" />
+   </children>
+</Pane>

@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Main">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ContinentController">
    <children>
       <ChoiceBox fx:id="contChoice" layoutX="197.0" layoutY="58.0" prefWidth="150.0">
           <items>
@@ -22,5 +22,6 @@
       <Label layoutX="116.0" layoutY="62.0" text="Continentes:" />
       <ListView id="byContinentList" fx:id="byContinentList" layoutX="101.0" layoutY="131.0" prefHeight="200.0" prefWidth="398.0" />
       <Button fx:id="buscarByContinent" layoutX="369.0" layoutY="58.0" mnemonicParsing="false" onAction="#populateListByContinent" text="Buscar" />
+      <Button fx:id="backButton" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnToMenu" text="Atrás" />
    </children>
 </Pane>

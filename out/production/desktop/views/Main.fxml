@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="views.Main">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Main">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -15,10 +14,10 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Button layoutX="25.0" layoutY="62.0" mnemonicParsing="false" text="Continentes" onAction="#goContinent"/>
-            <Button layoutX="121.0" layoutY="62.0" mnemonicParsing="false" text="Idiomas" />
-            <Button layoutX="29.0" layoutY="112.0" mnemonicParsing="false" text="Extensión" />
-            <Button layoutX="124.0" layoutY="112.0" mnemonicParsing="false" text="Nuevo" />
+            <Button layoutX="25.0" layoutY="62.0" mnemonicParsing="false" onAction="#goContinent" text="Continentes" />
+            <Button layoutX="121.0" layoutY="62.0" mnemonicParsing="false" onAction="#goLang" text="Idiomas" />
+            <Button layoutX="29.0" layoutY="112.0" mnemonicParsing="false" onAction="#goSize" text="Extensión" />
+            <Button layoutX="124.0" layoutY="112.0" mnemonicParsing="false" onAction="#goAdd" text="Nuevo" />
          </children>
       </Pane>
    </children>

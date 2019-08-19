@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Countries {
     //Variables for reading from file
-    private BufferedReader bufferedReader = null;
-    private BufferedWriter bufferedWriter = null;
+    private static BufferedReader bufferedReader = null;
+    private static BufferedWriter bufferedWriter = null;
     //Variable for data holder, an ArrayList that uses the Country object only
     private static ArrayList<Country> data = new ArrayList<>();
     //Variable for csv file name
-    private final String CSV_FILE_PATH = "Countries.csv";
+    private static final String CSV_FILE_PATH = "Countries.csv";
     //Instance of data holder
     private static Countries instance;
     //Private constructor
@@ -58,6 +58,28 @@ public class Countries {
         conts.addAll(tempList.keySet());
         return conts;
     }
+    public static List<String> getAllLangs(){
+        List<String> langs = new ArrayList<>();
+        HashMap<String, Integer> tempList = new HashMap<>();
+        for(int i = 0; i < data.size(); i++){
+            tempList.put(data.get(i).lang, i);
+        }
+        langs.addAll(tempList.keySet());
+        return langs;
+    }
+
+    public static List<String> getAllCountries(){
+        List<String> all = new ArrayList<>();
+        for(Country c : data){
+            StringBuilder sb = new StringBuilder();
+            sb.append(c.continent + ", ");
+            sb.append(c.name + ", ");
+            sb.append(c.size + ", ");
+            sb.append(c.lang);
+            all.add(sb.toString());
+        }
+        return all;
+    }
 
     public List<String> getCountriesBySize(int size){
         List<String> countries = new ArrayList<>();
@@ -86,10 +108,9 @@ public class Countries {
         }
     }
 
-    public static void addNewCountry(String continent, String name, int size, String lang){
+    public static void addNewCountry(String continent, String name, int size, String lang) throws IOException {
         Country c = new Country(continent, name, size, lang);
         data.add(c);
-
     }
 
 
