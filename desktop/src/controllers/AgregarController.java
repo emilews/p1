@@ -21,13 +21,7 @@ import java.util.ResourceBundle;
 
 public class AgregarController implements Initializable {
     private Countries countries;
-    {
-        countries = Countries.getInstance();
-    }
-    static ObservableList<String> continents = FXCollections.observableArrayList();
-    {
-        continents.addAll(countries.getAllContinents());
-    }
+
     @FXML
     public TextField contName;
     public TextField countName;
@@ -37,7 +31,7 @@ public class AgregarController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        countries = Countries.getInstance();
     }
     public void addCountry() throws IOException {
         int size = 0;

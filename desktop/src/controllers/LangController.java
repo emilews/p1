@@ -18,15 +18,13 @@ import java.util.ResourceBundle;
 
 public class LangController implements Initializable {
     private Countries countries;
-    {
-        countries = Countries.getInstance();
-    }
     @FXML
     public ListView<String> byLangList;
     public ChoiceBox<String> langChoice;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        countries = Countries.getInstance();
         langChoice.getItems().clear();
         langChoice.getItems().addAll(Countries.getAllLangs());
     }

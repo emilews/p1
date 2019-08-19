@@ -15,13 +15,8 @@ import java.util.ResourceBundle;
 
 public class ContinentController implements Initializable {
     private Countries countries;
-    {
-        countries = Countries.getInstance();
-    }
     static ObservableList<String> continents = FXCollections.observableArrayList();
-    {
-        continents.addAll(countries.getAllContinents());
-    }
+
     @FXML
     public ChoiceBox<String> contChoice;
     public ListView<String> byContinentList;
@@ -29,6 +24,12 @@ public class ContinentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        countries = Countries.getInstance();
+        if(continents.isEmpty()){
+            continents.addAll(countries.getAllContinents());
+            contChoice.getItems().clear();
+            contChoice.getItems().addAll(continents);
+        }
 
     }
     public void populateListByContinent(){

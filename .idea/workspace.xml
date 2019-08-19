@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/desktop/src/controllers/LangController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/countries/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/countries/Countries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/views/Continente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/views/Continente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/views/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/views/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop/src/views/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/views/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/core/Countries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/core/Countries.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/AgregarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/controllers/AgregarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/ContinentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/controllers/ContinentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/LangController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/controllers/LangController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/SizeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/controllers/SizeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/TodoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/views/Todo.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/core/countries/Countries$Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/core/countries/Countries$Country.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/core/countries/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/core/countries/Countries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desktop/views/Continente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/views/Continente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desktop/views/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/views/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/desktop/views/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/views/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/AgregarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/controllers/AgregarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/ContinentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/controllers/ContinentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/LangController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/controllers/LangController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/SizeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/controllers/SizeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/TodoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/views/Todo.fxml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -283,6 +285,8 @@
       <workItem from="1565982643820" duration="569000" />
       <workItem from="1565995634802" duration="2164000" />
       <workItem from="1566166953857" duration="14756000" />
+      <workItem from="1566191457124" duration="1026000" />
+      <workItem from="1566192499149" duration="763000" />
     </task>
     <servers />
   </component>
@@ -305,5 +309,16 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/countries/Countries.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

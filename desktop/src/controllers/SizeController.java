@@ -23,16 +23,14 @@ import java.util.ResourceBundle;
 
 public class SizeController implements Initializable {
     private Countries countries;
-    {
-        countries = Countries.getInstance();
-    }
+
     @FXML
     public ListView<String> bySizeList;
     public TextField sizeTextField;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        countries = Countries.getInstance();
     }
 
     public void populateListBySize(){

@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Countries {
     //Variables for reading from file
-    private static BufferedReader bufferedReader = null;
-    private static BufferedWriter bufferedWriter = null;
+    private BufferedReader bufferedReader = null;
+    private BufferedWriter bufferedWriter = null;
     //Variable for data holder, an ArrayList that uses the Country object only
     private static ArrayList<Country> data = new ArrayList<>();
     //Variable for csv file name
-    private static final String CSV_FILE_PATH = "Countries.csv";
+    private static final String CSV_FILE_PATH = "C:\\Users\\csipro\\Desktop\\Countries.csv";
     //Instance of data holder
     private static Countries instance;
     //Private constructor
@@ -55,6 +55,7 @@ public class Countries {
         for(int i = 0; i < data.size(); i++){
             tempList.put(data.get(i).continent, i);
         }
+        System.out.println(tempList.keySet());
         conts.addAll(tempList.keySet());
         return conts;
     }
@@ -92,7 +93,7 @@ public class Countries {
     }
 
     private void populate() throws Exception {
-        bufferedReader = new BufferedReader(new FileReader(new File(getClass().getClassLoader().getResource(CSV_FILE_PATH).getFile())));
+        bufferedReader = new BufferedReader(new FileReader(new File(CSV_FILE_PATH)));
         String s = "";
         int i = 0;
         while((s = bufferedReader.readLine()) != null){
@@ -103,20 +104,16 @@ public class Countries {
                 }
                 Country country = new Country(parts[0],parts[1],Integer.valueOf(parts[2]),parts[3]);
                 data.add(country);
+                System.out.println("Loaded one country");
             }
             i++;
         }
     }
 
-    public static void addNewCountry(String continent, String name, int size, String lang) throws IOException {
+    public static void addNewCountry(String continent, String name, int size, String lang) {
         Country c = new Country(continent, name, size, lang);
         data.add(c);
     }
-
-
-
-
-
 
     //Inner private class used to create an object for each country
     private static class Country{
