@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/countries/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/countries/Countries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/desktop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/resources/MainView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/views/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/src/views/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/core/countries/Countries$Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/core/countries/Countries$Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/core/countries/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/core/countries/Countries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/MainView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/controllers/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/controllers/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/desktop/views/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/desktop/views/Main.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +92,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1PTtLeEkdu80LV3uotj4x9aSCxq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -92,6 +109,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
@@ -138,7 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Countries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Countries" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="countries.Countries" />
       <module name="core" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -154,7 +172,8 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="views.Main" />
-      <module name="App" />
+      <module name="desktop" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\csipro\Desktop\javafx-sdk-11.0.2\lib --add-modules=javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -236,11 +255,6 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Countries" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Countries" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -256,12 +270,27 @@
       <workItem from="1565909884224" duration="4456000" />
       <workItem from="1565917290324" duration="3415000" />
       <workItem from="1565969989249" duration="5381000" />
-      <workItem from="1565982643820" duration="292000" />
+      <workItem from="1565982643820" duration="569000" />
+      <workItem from="1565995634802" duration="2164000" />
+      <workItem from="1566166953857" duration="8632000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />

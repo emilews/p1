@@ -22,5 +22,6 @@
         <jarDirectory url="file://$MODULE_DIR$/../../../javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="core" />
   </component>
 </module>

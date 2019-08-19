@@ -3,6 +3,7 @@ package countries;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Countries {
@@ -48,6 +49,16 @@ public class Countries {
         }
         return countries;
     }
+    public static List<String> getAllContinents(){
+        List<String> conts = new ArrayList<>();
+        HashMap<String, Integer> tempList = new HashMap<>();
+        for(int i = 0; i < data.size(); i++){
+            tempList.put(data.get(i).continent, i);
+        }
+        conts.addAll(tempList.keySet());
+        return conts;
+    }
+
     public List<String> getCountriesBySize(int size){
         List<String> countries = new ArrayList<>();
         for(Country c : data){
@@ -80,6 +91,7 @@ public class Countries {
         data.add(c);
 
     }
+
 
 
 
